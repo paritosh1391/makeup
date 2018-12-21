@@ -1,0 +1,1679 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2017 FriendsLaboratory
+/*	Author: FriendsLaboratory
+/*	This file is made for CURRENT TEMPLATE
+/*
+	01) BASE
+	02) CONTENT 
+	03) VERTICAL MENU
+	04) CONTENT IN (INDEX)
+	05) HEADER (DEFAULT DISPLAY:NONE;)
+	06) PAGINATION
+	07) FOOTER {DEFAULT DISPLAY: NONE;}
+	08) MAIN TITLE HOLDER
+	09) ABOUT (NEW PAGE)
+	10) SERVICES (NEW PAGE)
+	11) COMMON TEMPLATES(SERVICE SINGLE, BLOG, ABOUT)
+	12) BLOG (NEW PAGE)
+	13) MAGNIFIC POPUP (LIGHTBOXES)
+
+		13.1) TRANSITION
+		13.2) ADDRESS
+		13.3) CLOSE BUTTON
+		13.4) CONTACT FORM NOTICE (ERROR)
+		13.5) BOOKING
+		13.6) OPENING TIME
+		13.7) TIME PICKER
+	
+	14) GALLERY (NEW PAGE)
+	15) MEDIA QUERIES (FOR SMALL DEVICES)
+
+/*------------------------------------------------------------------*/
+/*	01) BASE
+/*------------------------------------------------------------------*/
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	color: #999;
+	
+	background-image:url(../img/bg_img.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/*------------------------------------------------------------------*/
+/*	02) CONTENT 
+/*------------------------------------------------------------------*/
+.makeup_fl_wrapper_all{
+	width: 100%;
+	clear: both;
+	float: left;
+	height: auto;
+}
+.makeup_fl_content{
+	width: 100%;
+	clear: both;
+	float: left;
+	height: auto;
+	padding: 50px 0px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*------------------------------------------------------------------*/
+/*	03) VERTICAL MENU
+/*------------------------------------------------------------------*/
+.makeup_fl_ver_menu{
+	width: 32%;
+	height: auto;
+	float: left;
+}
+.makeup_fl_ver_menu .vertical_menu{
+	width: 100%;
+	float: left;
+	height: auto;
+	padding: 10px;
+	background: rgba(0,0,0,0.8);
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_ver_menu_in{
+	width: 100%;
+	height: auto;
+	padding: 80px 50px 50px 50px;
+	overflow: hidden;
+	position: relative;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	background-image: -webkit-linear-gradient( rgba(39,3,30,0.5) , rgba(0,0,0,0.5) ); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient( rgba(39,3,30,0.5) , rgba(0,0,0,0.5) ); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient( rgba(39,3,30,0.5) , rgba(0,0,0,0.5) ); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient( rgba(39,3,30,0.5) , rgba(0,0,0,0.5) ); /* Standard syntax */
+}
+.makeup_fl_ver_menu_in .makeup_fl_logo{
+	text-align: center;
+	margin-bottom: 84px;
+}
+/* NAVIGATION LIST */
+.makeup_fl_ver_menu_in .makeup_fl_nav_list{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 79px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li{
+	text-align: left;
+	overflow: hidden;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #bbb;
+	letter-spacing: 1px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li a span{
+	position: relative;
+	
+	transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li a span:after{
+	position: absolute;
+	content: '';
+	width: 400px;
+	height: 1px;
+	background-color: rgba(255,255,255,0.05);
+	bottom: 3px;
+	left: 100%;
+	margin-left: 10px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li:hover span{
+	margin-left: 30px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_nav_list ul li:hover span:after{
+	width: 370px;
+}
+/* BOOKING BUTTON */
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn{
+	width: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+	line-height: 40px;
+	z-index: 999;
+	margin-bottom: 90px;
+	padding: 0px 50px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255,255,255,0.05);
+	top: 50%;
+	margin-top: -1px;
+	right: 100%;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn:after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255,255,255,0.05);
+	top: 50%;
+	margin-top: -1px;
+	right: auto;
+	left: 100%;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn a{
+	display: block;
+	text-decoration: none;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_a:hover,
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_b:hover{
+	background: rgba(255,255,255,0.1);
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_a:hover a i,
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_b:hover a i{
+	color: #bbb;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_a,
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_b{
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top:0px;
+	background: rgba(255,255,255,0.05);
+	z-index: 3;
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_a{
+	left: 0px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_b{
+	right: 0px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_a a i,
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_s_b a i{
+	color: #666;
+	font-size: 18px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_b{
+	width: 100%;
+	height: 40px;
+	padding:0px;
+	position: relative;
+	background-color: #371352;
+	z-index: 2;
+	border:2px solid transparent;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_b a{
+	font-size: 12px;
+	color: #bbb;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-style: normal;
+	margin-top: -2px;
+}
+.makeup_fl_ver_menu_in .makeup_fl_booking_btn .btn_b:hover{
+	background-color: #502A6E;
+}
+/* SOCIAL ICONS */
+.makeup_fl_social_icons{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 20px;
+}
+.makeup_fl_social_icons ul{
+	margin: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.makeup_fl_social_icons ul li{
+	display: inline-block;
+	margin: 0px 3px 10px 3px;
+	background-color: rgba(255,255,255,0.02);
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_social_icons ul li a{
+	display: block;
+	color: #666;
+	width: 40px;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	
+	transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.makeup_fl_social_icons ul li:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+.makeup_fl_social_icons ul li:hover a{
+	color:#bbb;
+}
+/* COPYRIGHT */
+.makeup_fl_cright{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	line-height: 1.2;
+	float: left;
+	margin-bottom: 25px;
+}
+.makeup_fl_cright span{
+	font-size: 12px;
+	letter-spacing: .5px;
+	color: #999;
+}
+.makeup_fl_cright span a{
+	color: #bbb;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+}
+.makeup_fl_cright span a:hover{
+	border-bottom: 1px solid #bbb;
+}
+/* TREUG */
+.makeup_fl_totop_wrapper{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	bottom: 0px;
+	left: 0px;
+}
+.makeup_fl_totop_wrapper i{
+	color: #bbb;
+	opacity: .5;
+	position: absolute;
+	bottom: 0px;
+	margin-left: -12px;
+	margin-bottom: -4px;
+	font-size: 18px;
+}
+.makeup_fl_totop_wrapper .rotating{
+	width: 50px;
+	height: 50px;
+	transform: rotate(45deg);
+	position: absolute;
+	background-color: #371352;
+	left: 50%;
+	top:10px;
+	margin-left: -25px;
+}
+/*------------------------------------------------------------------*/
+/*	04) CONTENT IN (INDEX)
+/*------------------------------------------------------------------*/
+.makeup_fl_content_in{
+	width: 65%;
+	float: right;
+	height: auto;
+}
+.makeup_fl_content_in_qq{
+	padding: 50px;
+	background-color: rgba(0,0,0,0.9);
+	position: relative;
+	overflow: hidden;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */	
+}
+.lessmargin{
+	margin-top: 20px !important;
+}
+.makeup_fl_content_wrap{
+	width: 100%;
+	float: left;
+}
+/* FOTORAMA */
+.makeup_fl_fotorama{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 40px;
+	transform: translateZ(0);
+	position: relative;
+}
+.fotorama__stage {
+    width: 100% !important;
+}
+.fotorama__nav{
+	height: 96px;
+}
+.fotorama__nav-wrap{
+	margin-top: -20px;	
+}
+.fotorama__thumb-border{
+	height: 64px !important;
+	background: rgba(0,0,0,.5);
+	border-width: 0px !important;
+	width: 96px !important;
+}
+/*  TESTIMONIALS */
+.makeup_fl_content_testimonials{
+	width:100%;
+	float:left;
+	background-color:#0f050e;
+	position: relative;
+	margin-bottom: 70px;
+}
+.makeup_fl_content_testimonials .testimonials{
+	width:100%;
+	clear:both;
+	float:left;
+	padding:60px 65px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_content_testimonials .testimonials .quote{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+.makeup_fl_content_testimonials .testimonials .quote i{
+	color: #271e27;
+	font-size: 24px;
+}
+.makeup_fl_content_testimonials .testimonials .item p{
+	font-size: 19px;
+	line-height: 1.5;
+	letter-spacing: .25px;
+	font-style: italic;
+	color: #999;
+}
+.makeup_fl_content_testimonials .testimonials .item span{
+	text-transform:uppercase;
+	font-size: 12px;
+	color: #bbb;
+	line-height: 1;
+	letter-spacing: 1px;
+	position: relative;
+}
+.makeup_fl_content_testimonials .testimonials .item span:after{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 1px;
+	background-color: #999;
+	right: 100%;
+	margin-right: 3px;
+	top: 50%;
+	margin-top: -1px;
+}
+.makeup_fl_content_testimonials .testimonials .item span:before{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 1px;
+	background-color: #999;
+	left: 100%;
+	margin-left: 3px;
+	top: 50%;
+	margin-top: -1px;
+}
+.makeup_fl_content_testimonials .testimonials .prev_next_btn{
+	position: absolute;
+	right: 22px;
+	bottom: 19px;
+}
+.makeup_fl_content_testimonials .testimonials .prev_next_btn a{
+	text-decoration: none;
+	display: block;
+	float: left;
+	margin-right: 12px;
+}
+.makeup_fl_content_testimonials .testimonials .prev_next_btn a.next{
+	margin-right: 0px;
+}
+.makeup_fl_content_testimonials .testimonials .prev_next_btn a i{
+	color: #999;
+}
+/*  PACKAGE LIST */
+.makeup_fl_package_list{
+	height: auto;
+	margin-left: -3%;
+	clear: both;
+}
+.makeup_fl_package_list_in{
+	width: 47%;
+	float: left;
+	margin-left: 3%;
+	background-color: #0f050e;
+	margin-bottom: 3%;
+}
+.makeup_fl_package_list_in .pckg_img img{
+	max-width: 100%;
+}
+.makeup_fl_package_list_in .pckg_info{
+	width: 100%;
+	height: auto;
+}
+.makeup_fl_package_list_in .pckg_info .title_holder{
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: .5px;
+	margin:40px auto;
+}
+.makeup_fl_package_list_in .pckg_info .title_holder h3{
+	color:#bbb;
+	font-size: 19px;
+	margin: 0px;
+	font-weight: 400;
+}
+.makeup_fl_package_list_in .pckg_info .title_holder span{
+	font-size: 14px;
+	color: #999;
+}
+.makeup_fl_package_list_in .pckg_info .price_list{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 30px;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul{
+	list-style-type: none;
+	margin: 0px;
+	float: left;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li{
+	margin:0px;
+	width: 100%;
+	margin-bottom: 3px;
+	background-color: rgba(255,255,255,.03);
+	float: left;
+	padding: 10px 30px;
+	z-index: 1;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li:last-child{
+	margin-bottom: 0px;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li .price_li{
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+	z-index: 5;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li .price_li span{
+	font-size: 14px;
+	letter-spacing: .5px;
+	color:#999;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li .price_li span.span1{
+	float: left;
+	padding-right: 70px;
+}
+.makeup_fl_package_list_in .pckg_info .price_list ul li .price_li span.span2{
+	position: absolute;
+	right: 0px;
+}
+.makeup_fl_package_list_in .pckg_info .total{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.makeup_fl_package_list_in .pckg_info .total span{
+	font-size: 14px;
+	color: #999;
+	letter-spacing: .5px;
+}
+.makeup_fl_package_list_in .pckg_info .footer{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.makeup_fl_package_list_in .pckg_info .footer .footer_btn a:after{
+	content: '';
+	width: 100%;
+	right: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	background-color: rgba(255,255,255,.05);
+}
+.makeup_fl_package_list_in .pckg_info .footer .footer_btn a:before{
+	content: '';
+	width: 100%;
+	left: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	background-color: rgba(255,255,255,.05);
+}
+.makeup_fl_package_list_in .pckg_info .footer .footer_btn{
+	position: relative;
+	z-index: 3;
+	text-align: center;
+}
+.makeup_fl_package_list_in .pckg_info .footer a:hover{
+	background: rgba(0,0,0,0.2);
+	border-color: #371352;
+}
+.makeup_fl_package_list_in .pckg_info .footer a{
+	text-decoration: none;
+	color:#bbb;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px 28px;
+	font-size: 12px;
+	display: inline-block;
+	background-color: #371352;	
+	z-index: 3;
+	position: relative;
+	border: 2px solid transparent;
+}
+/*------------------------------------------------------------------*/ 
+/*	05) HEADER (DEFAULT DISPLAY:NONE;)
+/*------------------------------------------------------------------*/
+.makeup_fl_header{
+	width: 100%;
+	clear: both;
+	float: left;
+	margin-bottom: 30px;
+	display: none;
+	position: relative;
+}
+.makeup_fl_header .makeup_fl_logo{
+	float: left;
+	max-width: 400px;
+}
+/* TRIGGER */
+.makeup_fl_header_trigger{
+	float: right;
+	margin-left: 30px;
+	position: relative;
+	padding: 8.5px 0px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_header_trigger span{
+	margin-bottom: 8px;
+	width: 40px;
+	height: 1px;
+	background-color: #bbb;
+	display: block;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */ 
+}
+.makeup_fl_header_trigger span:last-child{
+	margin-bottom: 0px;
+}
+.makeup_fl_header_trigger a{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+/* BOOKING BUTTON */
+.makeup_fl_header .makeup_fl_booking_btn{
+	float: right;
+	text-align: center;
+	position: relative;
+	line-height: 40px;
+	height: 40px;
+	margin-right: 50px;
+}
+.makeup_fl_header .makeup_fl_booking_btn a{
+	display: block;
+	text-decoration: none;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_a:hover,
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_b:hover{
+	background: rgba(255,255,255, 0.1);
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_a:hover a i,
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_b:hover a i{
+	color: #bbb;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_a,
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_b{
+	width: 50px;
+	position: absolute;
+	top:0px;
+	background: #150f13;
+	height: 40px;
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_a{
+	right: 100%;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_b{
+	left: 100%;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_a a i,
+.makeup_fl_header .makeup_fl_booking_btn .btn_s_b a i{
+	color: #666;
+	font-size: 18px;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_b{
+	position: relative;
+	background-color: #371352;
+	border:2px solid transparent;
+	height: 40px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_b a{
+	font-size: 12px;
+	color: #bbb;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-style: normal;
+	padding:0px 28px;
+	margin-top: -2px;
+}
+.makeup_fl_header .makeup_fl_booking_btn .btn_b:hover{
+	background-color: #502A6E;
+}
+/* NAVIGATION LIST*/
+.makeup_fl_header .makeup_fl_header_nav_list{
+	position: relative;
+	top:100%;
+	left: 0px;
+	width: 100%;
+	z-index: 999;
+	margin: 40px 0px 0px;
+	display: none;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul{
+	list-style-type: none;
+	margin:0px;
+	padding: 0px;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li .row{
+	width: 20px;
+	height: 1px;
+	background-color: #bbb;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li{
+	padding: 0px;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li > a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #bbb;
+	padding: 10px 0px;
+	display: block;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li > a:hover{
+	color: #999; 
+}
+/* BOOKING BUTTON */
+.makeup_fl_header .makeup_fl_header_nav_list ul li.mversion{
+	display: none;
+	margin-bottom: 20px;
+	height: 41px;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li.mversion .mversion_in > div{
+	display: inline-block;
+}
+.makeup_fl_header .makeup_fl_header_nav_list ul li.mversion a{
+	display: block;
+}
+.makeup_fl_header .makeup_fl_header_nav_list .makeup_fl_booking_btn{
+	float: left;
+	margin-left: 50px;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	06) PAGINATION
+/*------------------------------------------------------------------*/
+.makeup_fl_content_in .makeup_fl_pagination{
+	width: 100%;
+	clear: both;
+	float: left;
+	margin: 70px 0px 0px;
+}
+.makeup_fl_content_in .makeup_fl_pagination .makeup_fl_pagination_in{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.makeup_fl_content_in .makeup_fl_pagination .pages span{
+	color: #999;
+	font-size: 14px;
+	letter-spacing: .5px;
+}
+.makeup_fl_content_in .makeup_fl_pagination .pg_number{
+	float: left;
+	padding-right: 30px;
+}
+.makeup_fl_content_in .makeup_fl_pagination ul{
+	list-style-type: none;
+	margin: 0px;
+}
+.makeup_fl_content_in .makeup_fl_pagination ul li{
+	display: inline-block;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.makeup_fl_content_in .makeup_fl_pagination ul li a.active{
+	background-color:#371352;
+	color: #bbb;
+}
+.makeup_fl_content_in .makeup_fl_pagination ul li a{
+	text-decoration: none;
+	background-color:#1b1216;
+	display: block;
+	color: #575556;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	07) FOOTER {DEFAULT DISPLAY: NONE;}
+/*------------------------------------------------------------------*/
+.makeup_fl_footer{
+	width: 100%;
+	clear: both;
+	float: left;
+	text-align: center;
+	padding: 10px 0px;
+	margin: 20px 0px;
+	overflow: hidden;
+	display: none;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_footer .social_icons{
+	width: 100%;
+	clear: both;
+	float: left;
+	margin-bottom: 20px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_footer .social_icons ul{
+	text-align: center;
+	margin: 0px 0px 0px -6px;
+	list-style-type: none;
+	line-height: 40px;
+}
+.makeup_fl_footer .social_icons ul li{
+	display:inline-block;
+	margin-left: 6px;
+	margin-bottom: 6px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255,255,255,0.05);
+	padding: 0px;
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.makeup_fl_footer .social_icons ul li:hover{
+	background-color: rgba(255,255,255,0.1);
+}
+.makeup_fl_footer .social_icons ul li:hover a{
+	color: #bbb;
+}
+.makeup_fl_footer .social_icons ul li a{
+	color:#666;
+	display: block;
+}
+.makeup_fl_footer .cright{
+	width: 100%;
+	clear: both;
+	float: left;
+}
+.makeup_fl_footer .cright span{
+	font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+	color: rgba(255,255,255,.3);
+}
+.makeup_fl_footer .cright span a{
+	color: #bbb;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+}
+.makeup_fl_footer .cright span a:hover{
+	border-bottom-color: #bbb;
+}
+.makeup_fl_footer .rotate_box{
+	width: 100%;
+	clear: both;
+	float: left;
+	position: relative;
+	height: 15px;
+}
+.makeup_fl_footer .rotate_box .icon{
+	position: absolute;
+	left: 50%;
+	z-index: 33;
+	top: 5px;
+	margin-left: -13px;
+}
+.makeup_fl_footer .rotate_box .rotate_top{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #999CCC;
+	transform: rotate(45deg);
+	left:50%;
+	margin-left: -28px;
+	background:#AF0EAE;
+	z-index: 20;
+	top:10px;
+}
+/*------------------------------------------------------------------*/
+/*	08) MAIN TITLE HOLDER
+/*------------------------------------------------------------------*/
+.makeup_fl_content_wrap .makeup_fl_title_holder{
+	width: 100%;
+	height: auto;
+	margin:20px 0px 70px;
+	text-align: center;
+	position: relative;
+	float: left;
+	clear: both;
+}
+.makeup_fl_content_wrap .makeup_fl_title_holder .line{
+	content: '';
+	width: 200%;
+	height: 1px;
+	background-color: rgba(255,255,255,.05);
+	position: absolute;
+	top:50%;
+	left: -50%;
+}
+.makeup_fl_content_wrap .makeup_fl_title_holder span{
+	color: #bbb;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 13px 58px;
+	background-color: #371352;
+	position: relative;
+	display: inline-block;
+}
+/*------------------------------------------------------------------*/
+/*	09) ABOUT (NEW PAGE)
+/*------------------------------------------------------------------*/
+.makeup_fl_about_team{
+	width: 100%;
+	height: auto;
+}
+.makeup_fl_about_team .title_holder{
+	width: 100%;
+	margin-bottom: 44px;
+}
+.makeup_fl_about_team .title_holder h3{
+	margin-bottom: 0px;
+	color: #bbb;
+	font-size: 19px;
+	line-height: 1.5;
+	letter-spacing: .5px;
+	font-weight: 400;
+}
+.makeup_fl_about_team .team_holder{
+	margin-left: -3%;
+}
+.makeup_fl_about_team .team_holder .specialist{
+	width: 47%;
+	margin-left: 3%;
+	height: auto;
+	float: left;
+	margin-bottom: 20px;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_img{
+	margin-bottom: 20px;
+	position: relative;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_img img{
+	z-index: 5;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_img .overlay{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 10;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_name{
+	line-height: 1.5;
+	letter-spacing: .5px;
+	margin-bottom: 20px;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_name h3{
+	font-size: 19px;
+	margin-bottom: 0px;
+	color: #bbb;
+	font-weight: 400;
+}
+.makeup_fl_about_team .team_holder .specialist .spc_name span{
+	font-size: 14px;
+	color: #999;
+}
+.makeup_fl_about_team .team_holder .specialist .makeup_fl_social_icons ul{
+	text-align: left;
+}
+/*------------------------------------------------------------------*/ 
+/*	10) SERVICES (NEW PAGE)
+/*------------------------------------------------------------------*/
+.makeup_fl_content_wrap .makeup_fl_services{
+	margin-left: -3%;
+	width: auto;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service{
+	width: 47%;
+	height: auto;
+	margin-left: 3%;
+	margin-bottom: 43px;
+	float: left;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .srv_img{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .srv_img img{
+	z-index: 5;
+	min-width: 100%;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .srv_img .overlay{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 10;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .srv_img .price{
+	position: absolute;
+	z-index: 15;
+	right: 10px;
+	bottom: 10px;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .srv_img .price span{
+	padding: 9px 25px;
+	background: #371352;
+	color: #bbb;
+	font-size: 15px;
+	letter-spacing: 1px;
+	float: left;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .title_holder{
+	width: 100%;
+	float: left;
+	letter-spacing: .5px;
+	line-height: 1.5;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .title_holder h3{
+	margin-bottom: 0px;
+	font-size: 19px;
+	color: #bbb;
+	font-weight: 400;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .title_holder h3 a{
+	text-decoration: none;
+	color: #bbb;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .title_holder h3 a:hover{
+	color: #999;
+}
+.makeup_fl_content_wrap .makeup_fl_services .service .title_holder span{
+	font-size: 14px;
+	color: #999;
+}
+.makeup_fl_services .service .srv_img > a{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+	text-decoration: none;
+}
+/*------------------------------------------------------------------*/ 
+/*	11) COMMON TEMPLATES(SERVICE SINGLE, BLOG, ABOUT)
+/*------------------------------------------------------------------*/
+.makeup_fl_common{
+	width: 100%;
+	float: left;
+}
+.makeup_fl_common .common_img{
+	position: relative;
+	margin-bottom: 40px;
+	clear: both;
+}
+.makeup_fl_common .common_img img{
+	z-index: 5;
+}
+.makeup_fl_common .common_img .overlay{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(0,0,0,.3);
+	z-index: 10;
+}
+.makeup_fl_common .common_img a{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	text-decoration: none;
+}
+.makeup_fl_common .common_full_info{
+	width: 100%;
+	clear: both;
+}
+.makeup_fl_common .common_full_info .title_holder{
+	position: relative;
+	margin-bottom: 33px;
+}
+.makeup_fl_common .common_full_info .title_holder .common_name{
+	padding-right: 100px;
+	line-height: 1.5;
+	letter-spacing: .5px;
+}
+.makeup_fl_common .common_full_info .title_holder .common_name h3{
+	font-size: 19px;
+	color: #bbb;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+.makeup_fl_common .common_full_info .title_holder .common_name span{
+	font-size: 14px;
+	color: #999;
+}
+.makeup_fl_common .common_full_info .title_holder .common_price{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.makeup_fl_common .common_full_info .title_holder .common_price span{
+	padding: 9px 25px;
+	background: #371352;
+	color: #bbb;
+	font-size: 15px;
+	letter-spacing: 1px;
+	float: left;
+}
+.makeup_fl_common .common_full_info .common_info{
+	margin-bottom: 43px;
+}
+.makeup_fl_common .common_full_info .common_info p{
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	color: #999;
+	margin-bottom: 13px;
+}
+.makeup_fl_common .common_full_info .common_info p:last-child{
+	margin-bottom: 0px;
+}
+/* MAIN BUTTON */
+.makeup_fl_btn a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #bbb;
+	letter-spacing: 1px;
+	padding: 11px 36px;
+	background: #371352;
+	font-size: 12px;
+	border: 2px solid transparent;
+	display: inline-block;
+}
+.makeup_fl_btn a:hover{
+	background: rgba(0,0,0,0.2);
+	border-color: #371352;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	12) BLOG (NEW PAGE)
+/*------------------------------------------------------------------*/
+.makeup_fl_blog_list{
+	width: 100%;
+	margin-bottom: 70px;
+	float: left;
+}
+.makeup_fl_blog_list:last-child{
+	margin-bottom: 0px;
+}
+.makeup_fl_blog_list .common_full_info .title_holder{
+	line-height: 1.5;
+	letter-spacing: .5px;
+}
+.makeup_fl_blog_list .common_full_info .title_holder h3{
+	font-size: 19px;
+	color: #bbb;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+.makeup_fl_blog_list .common_full_info .title_holder h3 a{
+	text-decoration: none;
+	color: #bbb;
+}
+.makeup_fl_blog_list .common_full_info .title_holder h3 a:hover{
+	color:#999;
+}
+.makeup_fl_blog_list .common_full_info .title_holder span a{
+	font-size: 14px;
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+.makeup_fl_blog_list .common_full_info .title_holder span a:hover{
+	border-bottom: 1px solid #999;
+}	
+/*------------------------------------------------------------------*/ 
+/*	13) MAGNIFIC POPUP (LIGHTBOXES)
+/*------------------------------------------------------------------*/
+/***  13.1) TRANSITION ***/
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+ 	opacity: 0;
+
+ 	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+
+ 	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+/*** 13.2) ADDRESS ***/
+.address_popup {
+	position: relative;
+	width: auto;
+	height: auto;
+	max-width: 800px;
+	margin: 0px auto;
+	border-radius: 4px;
+}
+.address .box{
+	width: 50%;
+	float: left;
+}
+.address .box iframe{
+	max-width: 100%;
+	min-width: 100%;
+	display: block;
+	position: relative; /* IE needs a position other than static */
+    pointer-events: none;
+}
+.address .box iframe.clicked{
+    pointer-events: auto;
+}
+.address .box .info{
+	padding: 80px 30px;
+	width: 100%;
+	height: auto;
+	background: rgba(0,0,0,0.9);
+	letter-spacing: 1px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.address .box .info ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.address .box .info ul li{
+	margin:0px;
+	position: relative;
+	padding: 0px 45px;
+	color: rgba(255,255,255,.5);
+	margin-bottom: 30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.address .box .info ul li span.span1{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	font-size: 24px;
+}
+.address .box .info ul li span.span2{
+	font-size: 14px;
+}
+.address .box .info ul li span.span2 strong{
+	color: rgba(255,255,255,.8);
+}
+.address .box .info ul li span.span2 a{
+	text-decoration: none;
+	color: #bbb;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	
+	transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+.address .box .info ul li span.span2 a:hover{
+	border-bottom-color: #bbb;
+}
+/*** 13.3) CLOSE BUTTON ***/
+.mfp-close-btn-in .mfp-close{
+	color: #bbb;
+}
+/*** 13.4) CONTACT FORM NOTICE (ERROR)  ***/
+.contact_form .empty_notice{
+	color:#bbb;
+	display:none;
+	position:relative;
+}
+.contact_form .returnmessage{
+	display:none;
+	position:relative;
+}
+.contact_form .returnmessage span{
+	color:#009900;
+	display:block;
+}
+.contact_form .returnmessage span.contact_error{
+	color:#bbb;
+}
+/*** 13.5) BOOKING ***/
+.booking_popup{
+	position: relative;
+	width: auto;
+	max-width: 800px;
+	margin: 0px auto;
+	background: rgba(0,0,0,0.9);
+	padding: 50px;
+	border-radius: 8px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.makeup_fl_form{
+	width: 100%;
+	height: auto;
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+.book_online label{
+	display: block !important;
+	margin-bottom: 10px;
+}
+.book_online label span{
+	color: #bbb;
+}
+.makeup_fl_form h3{
+	font-size:24px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-weight:400;
+	color: #bbb;
+	opacity: .7;
+}
+.makeup_fl_form form input[type="text"],
+.makeup_fl_form form input[type="datetime"]{
+	width:100%;
+	min-width: 100%;
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+.makeup_fl_form form input[type="text"],
+.makeup_fl_form form textarea,
+.makeup_fl_form form input[type="text"]:focus,
+.makeup_fl_form form textarea:focus{
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #bbb;
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+.makeup_fl_form form .your-message{
+	clear: both;
+}
+.makeup_fl_form form input,
+.makeup_fl_form form textarea{
+	border-radius:4px;
+	background: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.2);
+	font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+.makeup_fl_form form input:focus,
+.makeup_fl_form form textarea:focus{
+	background: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.7);
+}
+.makeup_fl_form form > div{
+	margin-bottom: 20px;
+}
+.makeup_fl_form form :last-child{
+	margin-bottom: 0px;
+}
+.makeup_fl_form form input[type="button"]{
+	border-radius: 2px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #bbb;
+	letter-spacing: 1px;
+	padding: 11px 36px;
+	font-size: 12px;
+	display: inline-block;
+	background: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.3);
+}
+.makeup_fl_form form input[type="button"]:hover{
+	background: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.7);
+}
+/*  TOTOP  */
+a.totop:hover i{
+	opacity: 1;
+}
+/*** 13.6) OPENING TIME ***/
+.opening_time_popup{
+	position: relative;
+	width: auto;
+	max-width: 400px;
+	margin: 0px auto;
+	border-radius: 8px;
+}
+.opening_time_popup .opening{
+	width: 100%;
+	height: auto;
+}
+.opening_time_popup .opening .title_holder{
+	background: rgba(0,0,0,0.9);
+	text-align: center;
+	padding: 15px 0px;
+	border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.opening_time_popup .opening .title_holder h3{
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+	margin-bottom: 0px;
+	
+	color: #bbb;
+	opacity: .7;
+}
+.opening_time_popup .opening .info{
+	width: 100%;
+	background: rgba(0,0,0,.9);
+}
+.opening_time_popup .opening .info ul{
+	line-height: 50px;
+	margin: 0px;
+	list-style-type: none;
+}
+.opening_time_popup .opening .info ul li{
+	margin: 0px;
+	border-bottom: 1px solid rgba(255,255,255,.05);
+	padding: 0px 20px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.opening_time_popup .opening .info ul li .lili{
+	width: 100%;
+	position: relative;
+}
+.opening_time_popup .opening .info ul li span{
+	font-size: 16px;
+}
+.opening_time_popup .opening .info ul li span.span1{
+	padding-right: 100px;
+}
+.opening_time_popup .opening .info ul li span.span2{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+/*** 13.7) TIME PICKER ***/
+.ui-timepicker-wrapper{
+	background: rgba(0,0,0,.9);
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 4px;
+}
+.ui-timepicker-list li{
+	padding: 3px 10px;
+	color: rgba(255,255,255,.5);
+}
+/*------------------------------------------------------------------*/ 
+/*	14) GALLERY (NEW PAGE)
+/*------------------------------------------------------------------*/
+ul.makeup_fl_gallery_list{
+	list-style-type: none;
+	margin: 0px;
+	margin-left: -2%;
+}
+ul.makeup_fl_gallery_list li{
+	width: 48%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	float: left;
+}
+ul.makeup_fl_gallery_list li img{
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/*------------------------------------------------------------------*/ 
+/*	15) MEDIA QUERIES (FOR SMALL DEVICES)
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+/*  HEADER, FOOTER, VERTICAL MENU, MAIN CONTENT*/
+.makeup_fl_header, .makeup_fl_footer{display: block;}
+.makeup_fl_ver_menu{display: none;}
+.makeup_fl_content_in{width: 100%;}
+/*  INDEX */
+.makeup_fl_package_list_in .pckg_img{text-align: center;}
+/*  COMMON TEMPLATES CONTENT */
+.makeup_fl_common .common_img{text-align: center;}
+/*  ABOUT  */
+.makeup_fl_about_team .team_holder .specialist .spc_img{text-align: center;}
+/*  PAGINATION  */
+.makeup_fl_content_in .makeup_fl_pagination{margin-bottom: 50px;}
+/*  GALLERY  */
+ul.makeup_fl_gallery_list{margin-left: -1%;}
+ul.makeup_fl_gallery_list li{margin-left: 1%;margin-bottom: 1%;width: 24%;}
+}
+
+@media (max-width: 979px) {
+/*  LIGHTBOX  */
+.address .box .info ul li{padding: 0px 0px 0px 45px; margin-bottom: 15px;}
+/*  GALLERY  */
+ul.makeup_fl_gallery_list{margin-left: -2%;}
+ul.makeup_fl_gallery_list li{margin-left: 2%;margin-bottom: 2%;width: 48%;}
+}
+
+@media (max-width: 768px) {
+/*  HEADER */
+.makeup_fl_header > .makeup_fl_booking_btn{display: none;}
+.makeup_fl_header .makeup_fl_header_nav_list ul li.mversion{display: block;}
+/*  INDEX */
+.makeup_fl_fotorama{margin-bottom: 20px;}
+.makeup_fl_content_testimonials{margin-bottom: 50px;}
+.makeup_fl_package_list{margin-left: 0px}
+.makeup_fl_package_list_in{width: 100%;margin-left: 0px; margin-bottom: 30px;}
+.makeup_fl_content_testimonials .testimonials{padding: 30px 20px;}
+.makeup_fl_content_testimonials .testimonials .item p{font-size: 16px;}
+.makeup_fl_content_testimonials .testimonials .quote i{font-size: 16px;}
+.makeup_fl_content_testimonials .testimonials .quote{left:5px; top:5px;}
+.makeup_fl_content_testimonials .testimonials .prev_next_btn{right: 5px; bottom: 5px;}
+/*  MAIN CONTENT QQ*/
+.makeup_fl_content_in_qq{padding: 40px;}
+/*  ABOUT  */
+.makeup_fl_content_wrap .makeup_fl_title_holder{margin-bottom: 50px;}
+.makeup_fl_common .common_img{margin-bottom: 20px;}
+.makeup_fl_common .common_full_info .common_info{margin-bottom: 43px;}
+.makeup_fl_about_team .title_holder{margin-bottom: 24px;}
+.makeup_fl_about_team .team_holder .specialist{width: 100%; margin: 0px;}
+.makeup_fl_about_team .team_holder .specialist:last-child{margin-bottom: 0px;}
+.makeup_fl_about_team .team_holder{margin-left: 0px;}
+/*  SERVICES  */
+.makeup_fl_blog_list{margin-bottom: 50px;}
+.makeup_fl_content_wrap .makeup_fl_services .service{width: 100%; margin-left: 0px;margin-bottom: 23px;}
+.makeup_fl_content_wrap .makeup_fl_services{margin-left: 0px;}
+/*  PAGINATION  */
+.makeup_fl_content_in .makeup_fl_pagination .pages{left:0px;bottom: 0px;}
+.makeup_fl_content_in .makeup_fl_pagination .pg_number{padding-right: 20px;}
+/*  FOTORAMA  */
+.fotorama__caption__wrap{padding:7px 20px;}
+.fotorama__caption{font-size: 16px;}
+/*  GALLERY  */
+ul.makeup_fl_gallery_list{margin-left: 0%;}
+ul.makeup_fl_gallery_list li{margin-left: 0%;margin-bottom: 2%;width: 100%;}
+/*  LIGHTBOX  */
+.booking_popup{padding: 40px;}
+.makeup_fl_form form .your-time{margin-top: 20px;}
+.address .box{width: 100%;}
+}
+
+@media (max-width: 480px) {
+/*  HEADER */
+.makeup_fl_header .makeup_fl_logo img{max-width: 150px;}
+.makeup_fl_header .makeup_fl_booking_btn .btn_b a{padding:0px 15px;}
+/*  FOOTER */
+.makeup_fl_footer .social_icons ul{margin-left: 0px;}
+.makeup_fl_footer .social_icons ul{margin-left: 0px;}
+.makeup_fl_footer .social_icons ul{margin-left: 0px;}
+/*  PAGINATION */
+.makeup_fl_content_in .makeup_fl_pagination ul li{margin-bottom: 4px;}
+/*  INDEX */
+.makeup_fl_content_testimonials .testimonials .item p{font-size: 14px;}
+.makeup_fl_package_list_in .pckg_info .price_list ul li{padding: 10px 20px;}
+/*  MAIN CONTENT QQ*/
+.makeup_fl_content_in_qq{padding: 30px 20px;}
+/*  MAIN TITLE HOLDER  */
+.makeup_fl_content_wrap .makeup_fl_title_holder span{padding: 13px 36px;}
+/*  FOTORAMA  */
+.fotorama__caption__wrap{padding:3px 15px;}
+.fotorama__caption{font-size: 14px;}
+/*  LIGHTBOX  */
+.address .box .info{padding: 40px 15px;}
+.booking_popup{padding: 20px;}
+}
+
+@media (max-width: 350px) {
+/*  FOOTER */
+.makeup_fl_footer .social_icons ul li{margin-bottom: 4px;}
+}
