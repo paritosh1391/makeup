@@ -1241,6 +1241,17 @@ body{
 	margin-bottom: 0px;
 	font-weight: 400;
 }
+.sub_title_holder {
+	margin-bottom: 10px;
+}
+.sub_title_holder h4 {
+	font-size: 16px;
+margin: 0;
+color: #bbb;
+}
+.dot-list {
+	margin-top: 0;
+}
 .makeup_fl_blog_list .common_full_info .title_holder h3 a{
 	text-decoration: none;
 	color: #bbb;
