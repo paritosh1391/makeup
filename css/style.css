@@ -1710,3 +1710,8 @@ ul.makeup_fl_gallery_list li{margin-left: 0%;margin-bottom: 2%;width: 100%;}
     display: inline-block;
     vertical-align: bottom;
 }
+
+.ws-links a {
+    font-size: 18px;
+    color: #c581f9;
+}
