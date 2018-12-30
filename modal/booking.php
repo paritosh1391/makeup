@@ -1,4 +1,56 @@
 <!-- BOOK ONLINE BOXLIGHT -->
+
+<?php 
+	require_once $_SERVER['DOCUMENT_ROOT']."PHPMailer/src/Exception.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."PHPMailer/src/PHPMailer.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."PHPMailer/src/SMTP.php";
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;	
+	if($_POST["submit"]) {
+		$From = 'Nextraone';
+		$FromEmail = 'noreply@rvmua.com';
+		$recipient="paritosh.singh1391@nextraworld.com";
+		$sender=@$_POST["sender"];
+		$senderEmail=@$_POST["senderEmail"];
+		$senderNumber=@$_POST["senderNum"];
+		
+		//PHPMailer Object
+		$mail = new PHPMailer();
+		//From email address and name
+		$mail->From = $FromEmail;
+		$mail->FromName = $From;
+
+		//To address and name
+		$mail->addAddress($recipient, "Paritosh");
+
+		//Address to which recipient will reply
+		$mail->addReplyTo($senderEmail, $sender);
+
+		//CC and BCC
+		/* $mail->addCC("cc@example.com");
+		$mail->addBCC("bcc@example.com"); */
+
+		//Send HTML or Plain Text email
+		$mail->isHTML(true);
+		$subject="Registration For Gym";
+		$mailBody="Name: $sender<br>Email: $senderEmail<br><br>$senderNumber";
+		$mail->Subject = $subject;
+		$mail->Body = $mailBody;
+		//$mail->AltBody = "This is the plain text version of the email content";
+
+		if(!$mail->send()) 
+		{
+			echo "Mailer Error: " . $mail->ErrorInfo;
+		} 
+		else 
+		{
+			header('Location: thank-you.php');die;
+		}
+	}
+?>
+
+
+
 <div id="book_online" class="booking_popup">
 	<div class="book_online">
 		<div class="makeup_fl_form">
