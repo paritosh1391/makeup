@@ -1,16 +1,13 @@
 <?php
 
 // Put contacting email here
-$main_email = "ghost_9292@mail.ru";
+$main_email = "info.rvmua@gmail.com";
 
 
 //Fetching Values from URL
 $name = $_POST['xx_name'];
 $email = $_POST['xx_email'];
 $phone = $_POST['xx_phone'];
-$date = $_POST['xx_date'];
-$time = $_POST['xx_time'];
-$message = $_POST['xx_message'];
 
 
 
@@ -27,20 +24,15 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		// To send HTML mail, the Content-type header must be set
 		$headers = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$headers .= 'From:' . $email. "\r\n"; // Sender's Email
-		$headers .= 'Cc:' . $email. "\r\n"; // Carbon copy to Sender
+		$headers .= 'From:' . 'noreply@rvmua.com'. "\r\n"; // Sender's Email
 		
-		$template = '<div">Hello ' . $name . ',<br/>'
-		. 'Thank you for contacting us.<br/><br/>'
+		$template = '<div">'
 		. '<strong>Name:</strong>  ' . $name . '<br/>'
 		. '<strong>Email:</strong>  ' . $email . '<br/>'
 		. '<strong>Phone:</strong>  ' . $phone . '<br/>'
-		. '<strong>Reservation Date:</strong>  ' . $date . '<br/>'
-		. '<strong>Reservation Time:</strong>  ' . $time . '<br/><br/>'
-		. '<strong>Message:</strong>  ' . $message . '<br/><br/>'
-		. 'This is a Contact Confirmation mail.'
 		. '<br/>'
-		. 'We will contact you as soon as possible .</div>';
+		. 'This is a Contact Confirmation mail.'
+		. '<br/>';
 		$sendmessage = "<div>" . $template . "</div>";
 		
 		// message lines should not exceed 70 characters (PHP rule), so wrap it
