@@ -1657,6 +1657,9 @@ ul.makeup_fl_gallery_list li{margin-left: 0%;margin-bottom: 2%;width: 100%;}
 .booking_popup{padding: 40px;}
 .makeup_fl_form form .your-time{margin-top: 20px;}
 .address .box{width: 100%;}
+.makeup_fl_common .common_full_info .title_holder .common_price span {float: none; display: inline-block;}
+.makeup_fl_common .common_full_info .title_holder .common_price {position: static;}
+.contact-details span {display: block !important; margin: 0 0 10px; width: 100% !important;}
 }
 
 @media (max-width: 480px) {
