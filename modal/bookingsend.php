@@ -8,6 +8,7 @@ $main_email = "info.rvmua@gmail.com";
 $name = $_POST['xx_name'];
 $email = $_POST['xx_email'];
 $phone = $_POST['xx_phone'];
+$message = $_POST['xx_message'];
 
 
 
@@ -29,7 +30,8 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$template = '<div">'
 		. '<strong>Name:</strong>  ' . $name . '<br/>'
 		. '<strong>Email:</strong>  ' . $email . '<br/>'
-		. '<strong>Phone:</strong>  ' . $phone . '<br/>'
+		. '<strong>Phone:</strong>  ' . $phone . '<br/><br/>'
+		. '<strong>Message:</strong>  ' . $message . '<br/>'
 		. '<br/>'
 		. 'This is a Contact Confirmation mail.'
 		. '<br/>';
